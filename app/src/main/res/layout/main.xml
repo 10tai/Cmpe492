@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:background="@color/colorAccent"
+	android:padding="8dp"
+	android:weightSum="10">
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="59dp"
+		android:layout_weight="1.5"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/apinfo"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/black"
+			android:textSize="16sp" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="6"
+		android:orientation="vertical">
+
+		<ListView
+			android:id="@+id/clientlist"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent" />
+
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="2.5"
+		android:orientation="vertical"
+		android:weightSum="10">
+
+		<!--<LinearLayout-->
+			<!--android:layout_width="match_parent"-->
+			<!--android:layout_height="0dp"-->
+			<!--android:layout_weight="3"-->
+			<!--android:orientation="vertical"-->
+			<!--&gt;-->
+		<!---->
+	<!--<Button-->
+		<!--android:id="@+id/refresh_btn"-->
+		<!--android:layout_width="fill_parent"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:text="refresh"-->
+		<!--android:layout_margin="4dp"-->
+		<!--/>-->
+		<!--</LinearLayout>-->
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="5"
+			android:orientation="vertical"
+			>
+
+			<com.balysv.materialripple.MaterialRippleLayout
+				android:layout_width="match_parent"
+				android:id="@+id/ripple_effect2"
+				android:layout_height="50dp"
+				android:layout_marginTop="5dp"
+				app:mrl_rippleOverlay="true"
+				app:mrl_rippleColor="@color/colorPrimary"
+				app:mrl_rippleAlpha="0.2"
+				app:mrl_rippleDelayClick="false"
+				app:mrl_rippleHover="true">
+
+				<Button
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="enable hotspot"
+					android:onClick="enable"
+					android:textColor="@android:color/white"
+					android:background="@drawable/btn_border"
+					android:layout_margin="4dp"
+					/>
+
+			</com.balysv.materialripple.MaterialRippleLayout>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="5"
+			android:gravity="center"
+			android:orientation="vertical"
+			>
+
+			<com.balysv.materialripple.MaterialRippleLayout
+				android:layout_width="match_parent"
+				android:id="@+id/ripple_effect"
+				android:layout_height="50dp"
+				android:layout_marginTop="5dp"
+				app:mrl_rippleOverlay="true"
+				app:mrl_rippleColor="@color/colorPrimary"
+				app:mrl_rippleAlpha="0.2"
+				app:mrl_rippleDelayClick="false"
+				app:mrl_rippleHover="true">
+
+				<Button
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="disable hotspot"
+					android:onClick="disable"
+					android:textColor="@android:color/white"
+					android:background="@drawable/btn_border"
+					android:layout_margin="4dp"
+					/>
+
+			</com.balysv.materialripple.MaterialRippleLayout>
+
+
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>
